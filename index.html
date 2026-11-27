@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>YavoyStore | Business Manager</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <script src="/static/app.js" defer></script>
+  </head>
+  <body>
+    <aside>
+      <h2>Yavoy<span class="brand-accent">Store</span></h2>
+      <small>BUSINESS MANAGER · RD</small>
+      <nav id="nav"></nav>
+      <p class="sidebar-account">
+        Almacenamiento en la nube<br />
+        Versión 2.1 · Cloud<br />
+        <span id="account"></span><br />
+        <button type="button" class="secondary" data-action="logout">
+          Cerrar sesión
+        </button>
+      </p>
+    </aside>
+    <main>
+      <header>
+        <div>
+          <div class="muted">GESTIÓN DE NEGOCIO / <span id="crumb"></span></div>
+          <h1 id="title"></h1>
+        </div>
+        <div class="toolbar">
+          <input
+            type="month"
+            id="period"
+            aria-label="Período contable"
+          />
+          <button type="button" class="secondary" data-action="refresh">
+            ↻ Actualizar
+          </button>
+          <button type="button" class="secondary" data-action="backup">
+            ↓ Respaldo
+          </button>
+        </div>
+      </header>
+      <div id="view"></div>
+    </main>
+    <div id="toast" role="status"></div>
+    <dialog id="modal"></dialog>
+    <input type="file" id="restore" accept="application/json,.json" hidden />
+  </body>
+</html>

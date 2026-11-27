@@ -1,0 +1,56 @@
+body {
+  background: #12243b;
+  color: #fff;
+  font: 16px system-ui;
+  display: grid;
+  place-items: center;
+  min-height: 95vh;
+  margin: 0;
+}
+
+main {
+  width: min(360px, 84vw);
+  background: white;
+  color: #17283c;
+  padding: 32px;
+  border-radius: 18px;
+}
+
+h1 {
+  margin: 0;
+}
+
+h1 span {
+  color: #087e72;
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+}
+
+input,
+button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ccd6e1;
+  border-radius: 8px;
+  font: inherit;
+}
+
+button {
+  background: #087e72;
+  color: white;
+  margin-top: 24px;
+  border: 0;
+  font-weight: bold;
+}
+
+small {
+  color: #64748b;
+}
+
+.error {
+  color: #b42318;
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>YavoyStore Cloud</title>
+    <link rel="stylesheet" href="/static/login.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Yavoy<span>Store</span></h1>
+      <small>BUSINESS MANAGER · CLOUD</small>
+      <p>Accede a tu espacio de trabajo.</p>
+      <p class="error">{{error}}</p>
+      <form method="post" action="/login">
+        <label>
+          Usuario
+          <input name="user" autocomplete="username" required />
+        </label>
+        <label>
+          Contraseña
+          <input name="password" type="password" autocomplete="current-password" required />
+        </label>
+        <button>Iniciar sesión</button>
+      </form>
+    </main>
+  </body>
+</html>

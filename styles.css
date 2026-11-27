@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font:
+    14px system-ui,
+    -apple-system,
+    sans-serif;
+  background: #f3f6fa;
+  color: #17283c;
+}
+aside {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: 235px;
+  background: #12243b;
+  color: #fff;
+  padding: 28px 18px;
+}
+aside h2 {
+  margin: 0;
+  font-size: 25px;
+  letter-spacing: -1px;
+}
+aside small {
+  color: #9db2c9;
+}
+.brand-accent {
+  color: #56d5c1;
+}
+.sidebar-account {
+  margin-top: 35px;
+  color: #9db2c9;
+  font-size: 12px;
+}
+.sidebar-account button {
+  margin-top: 12px;
+}
+nav {
+  margin-top: 35px;
+  display: grid;
+  gap: 6px;
+}
+nav button {
+  background: transparent;
+  color: #c6d4e3;
+  text-align: left;
+  border: 0;
+  padding: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+nav button.active,
+nav button:hover {
+  background: #254461;
+  color: white;
+}
+main {
+  margin-left: 235px;
+  padding: 30px;
+  max-width: 1600px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: -0.8px;
+}
+h2 {
+  font-size: 18px;
+}
+p {
+  line-height: 1.5;
+}
+.muted {
+  color: #64748b;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 14px;
+  margin: 18px 0;
+}
+.card,
+.panel {
+  background: #fff;
+  border: 1px solid #e1e7ef;
+  border-radius: 13px;
+  padding: 20px;
+  box-shadow: 0 2px 7px #142d4805;
+}
+.card strong {
+  font-size: 25px;
+  display: block;
+  margin-top: 10px;
+  letter-spacing: -0.8px;
+}
+.panel {
+  margin: 16px 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  gap: 14px;
+  align-items: end;
+}
+label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 12px;
+}
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background: white;
+  color: #17283c;
+  font: inherit;
+}
+button,
+.btn {
+  border: 0;
+  border-radius: 7px;
+  padding: 10px 15px;
+  background: #087e72;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+button.secondary {
+  background: #e9eff6;
+  color: #253c54;
+}
+button.danger {
+  background: #fce8e6;
+  color: #a82b23;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.tablewrap {
+  overflow: auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  white-space: nowrap;
+}
+th,
+td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #e9edf3;
+}
+th {
+  font-size: 11px;
+  color: #65758a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+td.num,
+th.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.pill {
+  display: inline-block;
+  padding: 4px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  background: #e0f4ec;
+  color: #176b50;
+}
+.warn {
+  background: #fff0d2;
+  color: #925800;
+}
+.bad {
+  background: #fee8e6;
+  color: #ab3027;
+}
+.notice {
+  background: #fff6e5;
+  border: 1px solid #f0d9aa;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin: 12px 0;
+  color: #79500d;
+}
+.positive {
+  color: #087e72;
+}
+.negative {
+  color: #b42318;
+}
+.toolbar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.toolbar input {
+  width: auto;
+}
+.bar {
+  height: 8px;
+  border-radius: 8px;
+  background: #e6edf4;
+  overflow: hidden;
+  min-width: 80px;
+}
+.bar span {
+  height: 100%;
+  display: block;
+  background: #0b9285;
+}
+.empty {
+  padding: 22px;
+  text-align: center;
+  color: #64748b;
+}
+#toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #12243b;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 9px;
+  z-index: 5;
+  display: none;
+  max-width: 90vw;
+}
+#toast.visible {
+  display: block;
+}
+dialog {
+  border: 0;
+  border-radius: 14px;
+  padding: 25px;
+  width: min(650px, 94vw);
+  box-shadow: 0 15px 80px #0005;
+}
+dialog::backdrop {
+  background: #12243b88;
+}
+@media (max-width: 760px) {
+  aside {
+    position: static;
+    width: auto;
+    padding: 14px;
+  }
+  nav {
+    margin-top: 12px;
+    display: flex;
+    overflow: auto;
+  }
+  nav button {
+    white-space: nowrap;
+  }
+  main {
+    margin: 0;
+    padding: 15px;
+  }
+  header {
+    flex-wrap: wrap;
+  }
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .card {
+    padding: 14px;
+  }
+  .card strong {
+    font-size: 20px;
+  }
+}
+@media print {
+  aside,
+  button,
+  form,
+  .toolbar {
+    display: none !important;
+  }
+  main {
+    margin: 0;
+    padding: 0;
+  }
+  .panel,
+  .card {
+    box-shadow: none;
+  }
+}
